@@ -66,7 +66,7 @@ body{
     padding-bottom: 10px;
 }
 
-#playlist b{
+#playlist b, #infosong b{
     color: #fff;
     font-size: 20px;
 }
@@ -82,12 +82,7 @@ body{
 #boxercont{
     width: 100%;
     height: 100%;
-    background-color: brown;
     display: flex;
-}
-
-.sottocont_boxercont{
-   
 }
 
 #canzone, #comand{
@@ -96,7 +91,8 @@ body{
 }
 
 #canzone{
-    background-color: fuchsia;
+    display: flex;
+    align-items: center;
 }
 
 #player{
@@ -111,5 +107,24 @@ body{
 /* stiligenerali container */
 
  #cont_foto{
-    height: ;
+    height: 70%;
+    width: 13%;
+    background-color: #fff;
+}
+#cont_foto img{
+    width: 100%;
+    height: 100%;
+}
+#infosong{
+    margin-left: 10px;
+}
+#infosong p{
+    color: #7D7D7D;
+}
+
+.interection{
+    margin: 10px;
+}
+.interection i{
+    padding: 7px;
 }
