@@ -90,7 +90,7 @@ body{
     height: 100%;
 }
 
-#canzone{
+#canzone, #comand{
     display: flex;
     align-items: center;
 }
@@ -102,8 +102,22 @@ body{
 }
 
 #comand{
-    background-color: red;
+    justify-content: flex-end;
 }
+#comand i{
+    padding: 0px 7px;
+}
+
+#slivervolume{
+    width: 120px;
+    height: 5px;
+    background-color: gray;
+    margin: 0 9px;
+    border-radius: 10px 10px 10px 10px;
+    right: 0;
+}
+
+
 /* stiligenerali container */
 
  #cont_foto{
