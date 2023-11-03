@@ -10,6 +10,7 @@ body{
 #controller{
     height: 100px;
     background-color: #282828;
+    padding: 10px;
 }
 /* stili container principale */
 #wrapper-up{
@@ -75,3 +76,40 @@ body{
 }
 /* playlist */
 
+
+/* controler */
+
+#boxercont{
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    display: flex;
+}
+
+.sottocont_boxercont{
+   
+}
+
+#canzone, #comand{
+    width: 25%;
+    height: 100%;
+}
+
+#canzone{
+    background-color: fuchsia;
+}
+
+#player{
+    background-color: yellowgreen;
+    width: 50%;
+    height: 100%;
+}
+
+#comand{
+    background-color: red;
+}
+/* stiligenerali container */
+
+ #cont_foto{
+    height: ;
+}
