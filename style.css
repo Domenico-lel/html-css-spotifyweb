@@ -142,3 +142,27 @@ body{
 .interection i{
     padding: 7px;
 }
+
+
+/* main-content */
+/* sezione update */
+#uppdate{
+    width: 100%;
+    height: 100px;
+    background-color:#080B12;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+
+}
+
+#uppdate button{
+    padding: 13px;
+    border-radius: 30px;
+    background-color: #080B12;
+    color: #fff;
+    border: 2px solid #fff;
+    
+}
+/* sezione update */
