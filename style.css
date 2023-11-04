@@ -186,3 +186,54 @@ body{
     border: 2px solid #fff;
 }
 /* sezione update */
+
+/* navbar */
+#sottocontn_nav{
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#navbar{
+    height: 45px;
+    width: 100%;
+}
+
+#navbar b{
+    color: #fff;
+    cursor: pointer;
+    font-size: 77%;
+}
+/* navbar */
+
+#recently{
+    padding: 17px;
+}
+
+#sottocont_recent{
+    background-color: brown;
+}
+
+#sottocont_recent b{
+    font-size: 30px;
+}
+/* / */
+
+#contenitore_canzone{
+    width: 200px;
+    height: auto;
+    background-color: blueviolet;
+}
+
+#contenitore_canzone > div img{
+    width: 200px;
+    height: 100%;
+}
+
+
+.stiletextimg p, h3{
+    margin: 0 auto;
+}
