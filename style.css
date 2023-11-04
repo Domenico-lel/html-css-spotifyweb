@@ -95,16 +95,10 @@ body{
     align-items: center;
 }
 
-#player{
-    background-color: yellowgreen;
-    width: 50%;
-    height: 100%;
-}
-
 #comand{
     justify-content: flex-end;
 }
-#comand i{
+#comand i, #playpausa i{
     padding: 0px 7px;
 }
 
@@ -113,10 +107,39 @@ body{
     height: 5px;
     background-color: gray;
     margin: 0 9px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     right: 0;
 }
+/* roll bar */
+#player{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#player > #playpausa, #rollbar{
+    padding: 15px;
+}
 
+#playpausa, #rollbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rollbar p{
+    padding: 0 25px;
+    color: #fff;
+}
+
+#barr{
+    width: 50%;
+    height: 4px;
+    background-color: gray;
+    border-radius: 10px;
+}
+/* roll bar */
 
 /* stiligenerali container */
 
@@ -154,15 +177,12 @@ body{
     align-items: center;
     justify-content: flex-end;
     padding: 10px;
-
 }
-
 #uppdate button{
     padding: 13px;
     border-radius: 30px;
     background-color: #080B12;
     color: #fff;
     border: 2px solid #fff;
-    
 }
 /* sezione update */
