@@ -1,132 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <!-- font -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- fontawesome cdn -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
+
 <body>
-    <div id="wrapper-up">
 
-        <div id="slidebar">
-            <div id="slide_contain">
-                <div id="stile_logo">
-                    <img src="img/logo.svg" alt="logo">
+    <div id="main-content" class="flex">
+        <div id="side-bar">
+            <div class="container-side text-left">
+
+                <div class="wrap-up">
+                    <section class="side-small">
+                        <img src="image/logo-small.svg" alt="">
+                        <span><i class="fa-solid fa-house fa" style="color: #ffffff"></i></span>
+                        <span><i class="fa-solid fa-magnifying-glass fa" style="color: #707377;"></i></span>
+                        <span><i class="fa-solid fa-bars fa-rotate-90 fa-lg" style="color: #707377;"></i></span>
+                    </section>
+
+                    <section class="side-large">
+                        <div class="logo"><img src="image/logo.svg" alt="logo"></div>
+                        <div class="btn-section">
+                            <ul>
+                                <li class="select">
+                                    <div class="tag-select"></div>
+                                    <a href="#"><i class="fa-solid fa-house fa-2xl" style="color: #ffffff;"></i>
+                                        Home</a>
+                                </li>
+                                <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-2xl"
+                                            style="color: #707377;"></i> Cerca</a></li>
+                                <li><a href="#"><i class="fa-solid fa-bars fa-rotate-90 fa-2xl"
+                                            style="color: #707377;"></i> La tua libreria</a></li>
+                            </ul>
+                        </div>
+                        <div class="add-playlist">
+                            <span id="playlist">PLAYLIST</span>
+                            <a href="#"><i class="fa-regular fa-square-plus fa-2xl" style="color: #707377;"></i> Crea
+                                Playlist</a>
+                        </div>
+                    </section>
+
                 </div>
 
-                <div id="funzioni">
-                    <p><i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i> Home</p>
-                    <p><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #ffffff;"></i> Cerca</p>
-                    <p><i class="fa-solid fa-book-bookmark fa-xl" style="color: #ffffff;"></i> La tua libreria</p>
+                <div class="wrap-middle">
+
+                    <section class="side-large">
+                        <div class="list-playlist">
+                            <ul>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                            </ul>
+                        </div>
+                    </section>
+
                 </div>
 
-                <div id="playlist">
-                    <b>Playlist</b>
-                    <p id="stilecerca"><i class="fa-solid fa-square-plus fa-2xl" style="color: #ffffff;"></i> Cerca</p>
-                    <p>Nuova playlist</p>
-                    <p>Nuova playlist</p>
-                    <p>Nuova playlist</p>
-                    <p>Nuova playlist</p>
-                    <p>Nuova playlist</p>
-                    <p>Nuova playlist</p>
-                    <p>Nuova playlist</p>
+                <div class="wrap-bottom">
+                    <section class="side-small">
+                        <span><i class="fa-regular fa-circle-down fa-xl" style="color: #707377;"></i></span>
+                        <span><i class="fa-solid fa-circle-user fa-xl" style="color: #707377;"></i></span>
+                    </section>
+
+
+                    <section class="side-large">
+                        <div class="user">
+                            <span><a href="# ">   <i class="fa-regular fa-circle-down fa-sm" style="color: #707377;"></i> Installa
+                                App </a></span>
+                            <span id="divide"></span>
+                            <span id="user-name"><i class="fa-solid fa-circle-user fa-xl" style="color: #707377;"></i>
+                                John Doe</span>
+                        </div>
+                    </section>
                 </div>
 
             </div>
         </div>
 
-        <div id="main-content">
-            <div id="uppdate">
-                <button>EFFETTUA L'UPGRADE</button>
+        <div id="content">
+            <nav class="flex">
+                <a href="#">EFFETTUA L'UPGRADE</a>
+            </nav>
+
+            <div id="sub-nav">
+                <ul class="flex">
+                    <li class="select">
+                        <div class="tag-select-sub-nav"></div>
+                        <a href="#">IN EVIDENZA</a>
+                    </li>
+                    <li><a href="#">PODCAST</a></li>
+                    <li><a href="#">CLASSIFICHE</a></li>
+                    <li><a href="#">GENERI E MOOD</a></li>
+                    <li><a href="#">NUOVE USCITE</a></li>
+                    <li><a href="#">SCOPRI</a></li>
+                </ul>
             </div>
 
-            <div id="navbar">
-                <div id="sottocontn_nav">
-                    <b>IN EVIDENZA</b>
-                    <b>PODCAST</b>
-                    <b>CLASSIFICAZIONE</b>
-                    <b>GENERI E MOOD</b>
-                    <b>NUOVE USCITE</b>
-                    <b>SCOPRI</b>
-                </div>
+
+            <div class="container">
+
+                <section class="recently-played">
+                    <div class="title">
+                        <h1 class="text-left">Recently played</h1>
+                    </div>
+                    <div class="played">
+                        <div class="row">
+                            <div class="col">
+                                <div class="image">
+                                    <img src="image/metal_lifting.jpg" alt="heavy-metal">
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play fa-2xl" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                                <div class="text-cover">
+                                    <div class="title">Heavy Metal</div>
+                                    <div class="sub-title">Subtitle</div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="image">
+                                    <img src="image/stranger.jpeg" alt="stranger-things">
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play fa-2xl" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                                <div class="text-cover">
+                                    <div class="title">Stranegr Things, Vol.1 (a Netflix original series Soundtrack)
+                                    </div>
+                                    <div class="sub-title">Kyle Dixon & Michael Stein</div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="image">
+                                    <img src="image/aquietplace.jpeg" alt="quiet-place">
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play fa-2xl" style="color: #ffffff;"></i>
+                                    </div>
+
+                                </div>
+                                <div class="text-cover">
+                                    <div class="title">A quiet place</div>
+                                    <div class="sub-title">Subtitle</div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="image">
+                                    <img src="image/split.jpeg" alt="split">
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play fa-2xl" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                                <div class="text-cover">
+                                    <div class="title">Split</div>
+                                    <div class="sub-title">Subtitle</div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="image">
+                                    <img src="image/cure.jpeg" alt="cure">
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play fa-2xl" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                                <div class="text-cover">
+                                    <div class="title">A cure for wellness</div>
+                                    <div class="sub-title">Subtitle</div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="image">
+                                    <img src="image/sinister.jpeg" alt="sinister">
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play fa-2xl" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                                <div class="text-cover">
+                                    <div class="title">Sinister</div>
+                                    <div class="sub-title">Subtitle</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="create-for-you">
+                    <div class="title text-left">
+                        <h1 class="text-left">Create for you</h1>
+                    </div>
+                    <div class="sub-title">Più ascolti, più accurati saranno i suggerimenti</div>
+                    <div class="for-you">
+                        <div class="row">
+                            <div class="col">
+                                <div class="image">
+                                    <img src="image/radar.jpeg" alt="radar">
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play fa-2xl" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                                <div class="text-cover">
+                                    <div class="title">Release Radar</div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="image"><img src="image/mixdaily.jpeg" alt="mix-dayly">
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play fa-2xl" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+
+                                <div class="text-cover">
+                                    <div class="title">Daily Mix 1</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="popolar">
+                    <div class="title text-left">
+                        <h1 class="text-left">Artisti più popolari</h1>
+                    </div>
+                    <div class="sub-title">Più ascolti, più accurati saranno i suggerimenti</div>
+                    <div class="for-you">
+                        <div class="row">
+                            <div class="col">
+                                <div class="image">
+                                    <img class="circle" src="image/youg.jpeg" alt="lana-del-rey">
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play fa-2xl" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                                <div class="text-cover">
+                                    <div class="title">Lana Del Rey</div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="image">
+                                    <img class="circle" src="image/einaudi.jpeg" alt="enaudi">
+                                    <div class="play-btn">
+                                        <i class="fa-regular fa-circle-play fa-2xl" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                                <div class="text-cover">
+                                    <div class="title">Ludovico Einaudi</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+
             </div>
 
-            <section id="recently">
-                
-                <div id="sottocont_recent">
-                    <div>
-                        <b>Recently Played</b>
-                    </div>
-                    <div id="contenitore_canzone">
-                        <div>
-                            <img src="img/metal_lifting.jpg" alt="">
-                        </div>
-                        <div class="stiletextimg">
-                            <h3>Heavy Metal</h3>
-                            <p>subtitle</p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </section>
 
         </div>
-
     </div>
 
-    <div id="controller">
-        <div id="boxercont">
-            <!-- contenitore canzone -->
-            <div id="canzone">
-                <div id="cont_foto">
-                    <img src="img/sinister.jpeg" alt="sinister">
-                </div>
+    <div id="player">
+        <div class="container-player">
+            <div class="row align-center item-player1">
+                <div class="flex">
+                    <div class="image-player">
+                        <img src="image/sinister.jpeg" alt="">
+                    </div>
+                    <div class="brano-player">
+                        <h3>Sinister</h3>
+                        <span><a href="#">Brano Nome</a></span>
+                    </div>
 
-                <div id="infosong">
-                    <b>Singer</b>
-                    <p>Brano Nome</p>
+                    <div class="icon-player-left">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
                 </div>
+            </div>
 
-                <div class="interection">
-                    <i class="fa-regular fa-heart fa-lg" style="color: #858585;"></i>
-                    <i class="fa-regular fa-folder fa-lg" style="color: #858585;"></i>
+            <div class="row align-center item-player2">
+                <div class="main-player">
+                    <div class="icon-music flex">
+                        <span><i class="fa-solid fa-shuffle fa-xl" style="color: #ffffff;"></i></span>
+                        <span><i class="fa-solid fa-backward-step fa-xl" style="color: #ffffff;"></i></span>
+                        <span><i class="fa-regular fa-circle-play fa-2xl" style="color: #ffffff;"></i></span>
+                        <span><i class="fa-solid fa-forward-step fa-xl" style="color: #ffffff;"></i></span>
+                        <span><i class="fa-solid fa-rotate-right fa-xl" style="color: #ffffff;"></i></span>
+                    </div>
+                    <div class="bar-music flex">
+                        <span>0:25</span>
+                        <span class="line">
+                            <span class="sub-line"><i class="fa-solid fa-circle" style="color: #ffffff;"></i></span>
+                        </span>
+                        <span>4:15</span>
+                    </div>
                 </div>
 
             </div>
-            <!-- contenitore canzone -->
-    
-            <div id="player">
 
-                <div id="playpausa">
-                    <i class="fa-solid fa-shuffle fa-lg" style="color: #ffffff;"></i>
-                    <i class="fa-solid fa-backward-step fa-lg" style="color: #ffffff;"></i>
-                    <i class="fa-regular fa-circle-play fa-2xl" style="color: #ffffff;"></i>
-                    <i class="fa-solid fa-forward-step fa-lg" style="color: #ffffff;"></i>
-                    <i class="fa-solid fa-rotate-right fa-lg" style="color: #ffffff;"></i>
-                </div>
-                <div id="rollbar">
-                    <p>0:25</p>
-                    <div id="barr"></div>
-                    <p>4:35</p>
+            <div class="row align-center item-player1 justify-end">
+                <div class="icon-player-right">
+                    <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+                    <span><i class="fa-solid fa-desktop" style="color: #ffffff;"></i></span>
+                    <span><i class="fa-solid fa-volume-high" style="color: #ffffff;"></i></span>
+                    <span class="line">
+                        <span class="sub-line"><i class="fa-solid fa-circle" style="color: #ffff;"></i></span>
+                    </span>
+
                 </div>
             </div>
-    
-            <div id="comand">
-                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-                <i class="fa-solid fa-desktop" style="color: #ffffff;"></i>
-                <i class="fa-solid fa-volume-high" style="color: #ffffff;"></i>
-                <div id="slivervolume"></div>
-            </div>
-
         </div>
     </div>
 </body>
+
 </html>
